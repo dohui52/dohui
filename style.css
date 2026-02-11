@@ -852,3 +852,12 @@ body{
   font-weight: 900;
   letter-spacing: .3px;
 }
+
+/* 모바일에서 대표이미지 안 잘리게 */
+@media (max-width: 720px){
+  .profile-media img{
+    height: 240px;          /* 높이 줄이기 (원하면 220~280 조절) */
+    object-fit: contain;    /* ✅ 전체가 보이게 */
+    background: #000;       /* 남는 여백 자연스럽게 */
+  }
+}
