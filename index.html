@@ -142,7 +142,7 @@
     <div class="container">
       <div class="section-head">
         <h2>이력 / 활동</h2>
-        <p class="muted">2초마다 한 칸 회전 · 클릭하면 크게 보기</p>
+        <p class="muted">3초마다 한 칸 회전 · 클릭하면 크게 보기</p>
       </div>
       <div class="rotator" aria-label="경력 사진 3D 로테이터">
         <div class="rotator-ring" id="rotatorRing">
@@ -162,20 +162,13 @@
               <div class="info">PIA탐정</div>
             </div>
           </button>
-          <!-- 3 -->
-          <button class="card" type="button" data-full="images/international.jpg" aria-label="경력 3 크게 보기">
-          <img src="images/international.jpg" alt="경력 사진 international" />
-            <div class="meta">
-              <div class="title">international.jpg</div>
-              <div class="info">국제탐정사</div>
-            </div>
-          </button>
-            <!-- 8 -->
-          <button class="card" type="button" data-full="images/career4.jpg" aria-label="경력 4 크게 보기">
+         
+            <!-- 3 -->
+          <button class="card" type="button" data-full="images/career3.jpg" aria-label="경력 3 크게 보기">
             <img src="images/career3.jpg" alt="경력 사진 3" />
             <div class="meta">
               <div class="title">CAREER 08</div>
-              <div class="info">심리상담사</div>
+              <div class="info">국제탐정사</div>
             </div>
           </button>
           <!-- 4 -->
@@ -211,10 +204,7 @@
             </div>
           </button>
           <!-- 9 -->
-<button class="card" type="button"
-        data-full="images/career9.jpg"
-        aria-label="경력 9 크게 보기">
-
+<button class="card" type="button" data-full="images/career9.jpg"  aria-label="경력 9 크게 보기">
   <img src="images/career9.jpg" alt="경력 사진 9" />
 
   <div class="meta">
@@ -281,7 +271,7 @@
     // 자동 회전: "멈춤(HOLD) → 회전(SPIN) → 멈춤..."
     const loop = () => {
       if (paused) return;
-      // 3초 멈추고 다음으로
+      // 2초 멈추고 다음으로
       timer = window.setTimeout(() => {
         rotateTo(index + 1);
         // 회전 시간 지난 뒤 다시 멈춤 루프
